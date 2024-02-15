@@ -5,7 +5,7 @@ provider "aws" {
 # Launch an EC2 instance
 resource "aws_instance" "my_instance" {
   ami             = "ami-0d3f444bc76de0a79"  # Replace with the desired AMI ID
-  instance_type   = "t2.micro"  # Change this to the desired instance type
+  instance_type   = "t2.medium"  # Change this to the desired instance type
   subnet_id       = aws_subnet.my_subnet.id
  
 
